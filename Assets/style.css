@@ -1,145 +1,143 @@
 * {
   padding: 0%;
-  margin: 1%;
+  margin: 0%;
   box-sizing: border-box;
 }
 
 .Headshot {
-  height: 100vh;
-  width: 100%;
-  margin-left: 5%;
+  height: 90vh;
+  width: 92.5%;
+  margin-left: 1%;
   background-image: url(Images/DSC00664.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
- 
-  
 }
 
 body {
-    margin: 2;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
+  .topsection {
+    background-color: #f1cfac;
+    background-image: linear-gradient(#f1cfac,  #f9f8f6)
+  }
 
-.name{
-  color:black;
+nav {
+display: flex;
+justify-content: space-between;
+padding-top: 45px;
+padding-left: 8%;
+padding-right: 5%;
+  }
+
+.name {
+  font-size: 16px;
   letter-spacing: 1px;
-  font-size: 15px;
-
-
+  font-weight: bold;
 }
 
-nav,
-.scroll-container{
-display: block;
-margin: 0 auto;
-text-align: center;
+span {
+color: rgb(128, 126, 123);
 }
 
-nav{
-  display: flex;
-  align-items: right;
-  justify-content: space-between;
-  padding-top: 45px;
+.scroll-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
-.scroll-page{
-  display: flex;
-  justify-content: center;
-  height: 100%;
+.scroll-page {
+width: 15px;
+height: 15px;
+background-color: #333;
+margin: 5px;
+border-radius: 50%;
+cursor: pointer;
 }
 
 
-/*.topnav a.name {
-   
-    font-weight: bold;
-    color: black;
-    float: left;
-   
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
 }
 
-  .topnav {
-    overflow: hidden;
-  }
-  
-  .topnav a {
-   
-    color: #0f0e0e;
-    text-align: center;
-    text-decoration: none;
-    border: 2px black;
-    font-size: 17px;
-  }
-  
-  .topnav-right a:hover {
-    background-color: #edba8b;
-    transform: scale(1.2);
-  
-  }
-  
-  .topnav-right {
-    float:right;
-    justify-content: space-between;
-    padding-right: 8px;
-    padding-left: 8px;
-  }*/
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
 
+nav ul li a:hover {
+  color:rgb(128, 126, 123);
+}
 
 .title {
   position: absolute;
-  top: 60%;
-  left: 8%;
+  top: 40%;
+  left: 5%;
   transform: translateY(-10%) translateX(+10%)
-
 }
+
+
+
 h1{
   color: #edba8b;
   margin: 20px 0px 20px;
-  font-size: 75px;
+  font-size: 85px;
+  font-weight: bold
 }
 
+
 h3 {
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 50px;
 }
+
 h4 {
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
-
-#AboutMe {
-    height: 100px;
-    flex-wrap: wrap;
-    display: flex;
+.about-text {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  margin-top: 50px;
+  margin-bottom: 30px
 }
 
-
-/*h2 {
-    font-family: sans-serif;
-    font-size: 40px;
+.mainsection {
+  width: 1140px;
+  max-width: 95%;
+  margin: 0% auto;
+  align-items: center;
+  
+  
 }
 
-h3 {
-    font-family: sans-serif;
-    font-size: 40px;
+.about-text h2{
+  text-transform: capitalize;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
+.about-text p{
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.work-content {
 
 }
-h4{
-    font-family: sans-serif;
-    font-size: 20px;
+.secondsection img {
+  margin-bottom: 20px;
 }
-h5{
-    font-family: sans-serif;
-    font-size: 40px;
-}*/
 
- #footer{
-    background-color:rgb(117, 109, 117);
-    display: block;
-    
+ .footer{
+    background-color: rgb(154, 154, 154);
  }
 
  .projectone {
@@ -147,9 +145,8 @@ margin-top: 30px 0;
 font-size: 30px;
  }
 
- @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+ @media screen and (max-width: 800px) {
+  .title {
+   text-align: center;
+  } 
+}
