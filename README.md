@@ -1,4 +1,4 @@
-# ElizabethWebsite
+# ElizabethPortfolio
 
 This web page will compile all of the work I complete throughout the coding course. I want this portfolio to showcase my skills and talents; therefore, I will continue to make improvements and additions. 
 
@@ -9,3 +9,5 @@ I created navigation links, which navigate to the designated sections on the web
 I added an image of the first application I completed during this course.
 After clicking on the image, the user is taken to the deployed application. 
 Code was added to make this site a responsive layout that adapts to the user viewport. 
+
+![Screenshot of Elizabeth's Portfolio Webpage](Assets/Images/screenshotElizabethPortolio.png) 
